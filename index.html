@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Minimarket — kundalik oziq-ovqat mahsulotlari va tezkor buyurtma.">
+  <title>Mini Market | Onlayn do‘kon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="home">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="Mini Market bosh sahifa">
+        <img src="images/logo.png" alt="Mini Market logotipi">
+        <span class="brand-name">MINI <b>MARKET</b></span>
+      </a>
+      <p class="tagline">Har kuni kerakli mahsulotlar — bir joyda!</p>
+    </div>
+  </header>
+
+  <nav class="navbar" aria-label="Asosiy menyu">
+    <div class="nav-inner">
+      <a href="#home">Bosh sahifa</a>
+      <a href="#products">Mahsulotlar</a>
+      <a href="#order">Buyurtma berish</a>
+      <a href="#contact">Bog‘lanish</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" aria-labelledby="welcome-title">
+      <div class="hero-copy">
+        <span class="eyebrow">Xush kelibsiz!</span>
+        <h1>Yaxshi mahsulotlar,<br><span>qulay narxlar.</span></h1>
+        <p>Kundalik oziq-ovqat va uy-ro‘zg‘or uchun kerakli mahsulotlarni oson tanlang.</p>
+        <a class="primary-link" href="#products">Mahsulotlarni ko‘rish <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Oziq-ovqat mahsulotlari tasvirlangan bezak">
+        <div class="art-circle"></div>
+        <div class="grocery-emoji" aria-hidden="true">🥖 🥛 🥦<br>🍎 🛒 🍞</div>
+        <span class="fresh-label">Yangi va sifatli</span>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Do‘kon afzalliklari">
+      <div class="benefit"><span>✓</span><div><strong>Kundalik mahsulotlar</strong><small>Kerakli narsalar bir joyda</small></div></div>
+      <div class="benefit"><span>₸</span><div><strong>Hamyonbop narxlar</strong><small>Oila budjetiga mos</small></div></div>
+      <div class="benefit"><span>♡</span><div><strong>Qulay buyurtma</strong><small>Formani to‘ldirish kifoya</small></div></div>
+    </section>
+
+    <section id="products" class="section-card">
+      <div class="section-heading">
+        <div><span class="eyebrow">Bizning tanlov</span><h2>Asosiy mahsulotlar</h2></div>
+        <p>Narxlar so‘mda ko‘rsatilgan.</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>T/r</th><th>Mahsulot nomi</th><th>O‘lchov birligi</th><th>Narxi (so‘m)</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td><span class="product-icon">🌾</span> Oliy navli un</td><td>1 kg</td><td class="price">8 500</td></tr>
+            <tr><td>2</td><td><span class="product-icon">🍚</span> Shakar</td><td>1 kg</td><td class="price">13 000</td></tr>
+            <tr><td>3</td><td><span class="product-icon">🫒</span> Kungaboqar yog‘i</td><td>1 litr</td><td class="price">16 500</td></tr>
+            <tr><td>4</td><td><span class="product-icon">🥛</span> Sut (2,5%)</td><td>1 litr</td><td class="price">9 000</td></tr>
+            <tr><td>5</td><td><span class="product-icon">🍚</span> Guruch (Lazer)</td><td>1 kg</td><td class="price">18 000</td></tr>
+            <tr><td>6</td><td><span class="product-icon">🍝</span> Makaron</td><td>900 g</td><td class="price">11 000</td></tr>
+            <tr><td>7</td><td><span class="product-icon">🥚</span> Tuxum</td><td>1 dona</td><td class="price">1 800</td></tr>
+            <tr><td>8</td><td><span class="product-icon">🍵</span> Qora choy</td><td>1 quti</td><td class="price">14 000</td></tr>
+            <tr><td>9</td><td><span class="product-icon">🧂</span> Tuz</td><td>1 kg</td><td class="price">3 000</td></tr>
+            <tr><td>10</td><td><span class="product-icon">🧈</span> Saryog‘</td><td>200 g</td><td class="price">15 000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Eslatma: bu o‘quv loyiha uchun namunaviy narxlar. Haqiqiy narxlar do‘konga qarab farq qilishi mumkin.</p>
+    </section>
+
+    <section id="order" class="order-layout">
+      <div class="order-info">
+        <span class="eyebrow">Tez va oson</span>
+        <h2>Buyurtma berish</h2>
+        <p>Ma’lumotlaringizni kiriting va kerakli mahsulotni tanlang.</p>
+        <div class="order-tip">💚 <span>Buyurtma formasi namoyish uchun ishlaydi. Haqiqiy yuborish uchun server yoki Telegram kabi xizmatga ulash kerak.</span></div>
+      </div>
+      <form class="order-form" id="order-form">
+        <div class="form-group">
+          <label for="fullname">F.I.Sh.</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Ism va familiyangiz" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Telefon raqam</label>
+          <input type="tel" id="phone" name="phone" placeholder="+998 90 123 45 67" pattern="\+?[0-9\s()\-]{9,20}" required>
+        </div>
+        <div class="form-group">
+          <label for="product-select">Mahsulotni tanlang</label>
+          <select id="product-select" name="product" required>
+            <option value="Oliy navli un — 8 500 so‘m">Oliy navli un — 8 500 so‘m</option>
+            <option value="Shakar — 13 000 so‘m">Shakar — 13 000 so‘m</option>
+            <option value="Kungaboqar yog‘i — 16 500 so‘m">Kungaboqar yog‘i — 16 500 so‘m</option>
+            <option value="Sut (2,5%) — 9 000 so‘m">Sut (2,5%) — 9 000 so‘m</option>
+            <option value="Guruch (Lazer) — 18 000 so‘m">Guruch (Lazer) — 18 000 so‘m</option>
+            <option value="Makaron — 11 000 so‘m">Makaron — 11 000 so‘m</option>
+            <option value="Tuxum — 1 800 so‘m">Tuxum — 1 800 so‘m</option>
+            <option value="Qora choy — 14 000 so‘m">Qora choy — 14 000 so‘m</option>
+            <option value="Tuz — 3 000 so‘m">Tuz — 3 000 so‘m</option>
+            <option value="Saryog‘ — 15 000 so‘m">Saryog‘ — 15 000 so‘m</option>
+          </select>
+        </div>
+        <button class="primary-button" type="submit">Buyurtmani yuborish <span aria-hidden="true">→</span></button>
+        <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-inner">
+      <a class="footer-brand" href="#home">🛒 MINI MARKET</a>
+      <p>Sizning qulay va yaqin oziq-ovqat do‘koningiz.</p>
+      <p class="copyright">© 2026 Mini Market Tizimi. Muallif: Omadbek Abdugafforov.</p>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('order-form');
+    const message = document.getElementById('form-message');
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      const name = document.getElementById('fullname').value.trim();
+      const product = document.getElementById('product-select').value;
+      message.textContent = `Rahmat, ${name}! “${product}” tanlandi. Bu demo shakl: buyurtma serverga yuborilmadi.`;
+      form.reset();
+    });
+  </script>
+</body>
+</html>

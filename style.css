@@ -1,0 +1,262 @@
+/* Umumiy sozlamalar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Butun sahifa orqa foniga market rasmimiz tushirildi */
+    background-image: linear-gradient(rgba(244, 247, 246, 0.85), rgba(244, 247, 246, 0.85)), url('images/market.jpg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER QISMI (Fon rasmi va oq yozuvlar bilan) */
+.site-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/market.jpg.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.header-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-decoration: none;
+}
+
+/* Logotip rasmini dumaloq qilish va o'lchamlarini moslash */
+.brand img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #1abc9c;
+    background: white;
+}
+
+/* MINI MARKET yozuvini oppoq qilish */
+.brand-name {
+    color: #ffffff !important;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.brand-name b {
+    color: #1abc9c; /* MARKET so'ziga yashil urg'u */
+}
+
+/* "Har kuni kerakli mahsulotlar..." matnini oq qilish */
+.tagline {
+    color: #ffffff !important;
+    font-size: 16px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+/* NAVIGATSIYA PANELI */
+.navbar {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/market_nav.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-inner {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar a:hover {
+    color: #1abc9c;
+    transform: translateY(-2px);
+}
+
+/* ASOSIY KONTENT QISMI */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Oq qismlar (section va section-card) */
+section {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* Hero qismlari dizayni */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-copy h1 {
+    color: #2c3e50;
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.hero-copy h1 span {
+    color: #1abc9c;
+}
+
+.eyebrow {
+    color: #1abc9c;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Afzalliklar qismi */
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.92) !important;
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.benefit span {
+    font-size: 24px;
+    color: #1abc9c;
+}
+
+/* JADVAL DIZAYNI */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 14px 16px;
+    text-align: left;
+}
+
+table th {
+    background-color: #2c3e50;
+    color: white;
+    font-size: 16px;
+}
+
+table tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(248, 249, 250, 0.8);
+}
+
+table tr:hover {
+    background-color: rgba(232, 248, 245, 0.9);
+}
+
+/* FORMA ELEMENTLARI DIZAYNI */
+.order-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #fdfdfd;
+}
+
+.primary-button {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.primary-button:hover {
+    background-color: #16a085;
+}
+
+/* FOOTER QISMI */
+footer {
+    background-color: #1e272e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+.footer-brand {
+    color: #1abc9c;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.copyright {
+    margin-top: 10px;
+    color: #a4b0be;
+    font-size: 13px;
+}
